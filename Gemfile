@@ -12,7 +12,6 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'pg'
 gem 'simple_form'
-gem 'scriptcam-rails'
 
 group :development do
   gem 'better_errors'
