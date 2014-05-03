@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'pg'
 gem 'simple_form'
 gem 'scriptcam-rails'
+gem 'font-awesome-sass'
 
 group :development do
   gem 'better_errors'
