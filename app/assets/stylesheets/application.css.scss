@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+/* START THEME */
+$palette-primary: #60016D;
+
+/* END THEME */
+
+/* START BASE */
+.spacer {
+    margin-top: 40px;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+/* END BASE */
+
+/* START LANDING PAGE */
+.youtube-wrap {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 0px;
+	height: 0;
+	overflow: hidden;
+}
+.youtube-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.landing-page {
+	.call-to-action {
+		margin-top: 3em;
+	}
+	.youtube-wrap {
+		margin-top: 5em;
+	}
+}
+/* END LANDING PAGE */
+
+
+
+
+
+
+
