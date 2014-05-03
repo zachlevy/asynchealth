@@ -151,6 +151,8 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    scriptcam-rails (0.0.2)
+      railties (> 3.1.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -212,6 +214,7 @@ DEPENDENCIES
   rails_layout
   rspec-rails (>= 3.0.0.beta2)
   sass-rails (~> 4.0.3)
+  scriptcam-rails
   sdoc (~> 0.4.0)
   selenium-webdriver
   simple_form
