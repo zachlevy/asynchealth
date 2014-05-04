@@ -16,8 +16,7 @@
 //= require_tree .
 //= require swfobject
 //= require scriptcam
-
-    /* JWPlayer cloud hosted with erichwelz@gmail.com account */
+//= require jquery.ui.all
 
 
 $(function() {
@@ -48,6 +47,17 @@ $(function() {
 			if ($(this).is(":checked")) {
 				var question = $(this).attr("id");
 				$("#question-" + question).addClass("alert-success");
+				console.log("works");
+			}
+		});
+	});
+	$(".radio-people").change("checked", function () {
+		console.log("radio people change");
+		$(".people-select").removeClass("alert-success");
+		$(".radio-people").each(function() {
+			if ($(this).is(":checked")) {
+				var question = $(this).attr("id");
+				$("#people-" + question).addClass("alert-success");
 				console.log("works");
 			}
 		});

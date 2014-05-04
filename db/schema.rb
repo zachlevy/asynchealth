@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504144258) do
+ActiveRecord::Schema.define(version: 20140504144650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20140504144258) do
     t.integer  "timeline_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "councillor_id"
   end
 
   add_index "videos", ["timeline_id", "created_at"], name: "index_videos_on_timeline_id_and_created_at", using: :btree
