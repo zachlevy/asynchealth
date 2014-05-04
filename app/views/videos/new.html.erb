@@ -1,4 +1,35 @@
 <div class="col-xs-12 page newvideo-page">
+
+
+
+
+	<%= form_for @video do |f| %>
+
+	  <div class="field">
+	    <%= f.label :question_id %><br />
+	    <%= f.text_field :question_id %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :councillor_id %><br />
+	    <%= f.text_field :councillor_id %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :video_url %><br />
+	    <%= f.text_field :video_url %>
+	  </div>
+
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+
+
+
+
+
+
 	<h1>Create a New Video</h1>
 	<hr />
 	<div class="row subpage subpage-1">
