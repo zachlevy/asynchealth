@@ -17,6 +17,7 @@
 //= require swfobject
 //= require scriptcam
 
+    /* JWPlayer cloud hosted with erichwelz@gmail.com account */
 
 
 $(function() {
