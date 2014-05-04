@@ -1,3 +1,4 @@
 $(document).ready(function() {
-$("#webcam").scriptcam();
+$("#webcam").scriptcam(
+	);
 });

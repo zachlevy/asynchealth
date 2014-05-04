@@ -44,7 +44,6 @@ test:
   pool:     5
   username: asynchealth
   password:
-  template: template0
 
 production:
   adapter: postgresql
