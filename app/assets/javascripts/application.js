@@ -63,4 +63,12 @@ $(function() {
 		});
 	});
 	/* END FORM QUESTIONS */
+	/* START TIMELINE */
+	$("#councillor-show").hide();
+	$("#respond-button").on("click", function () {
+		console.log("button clicked");
+		$("#councillor-show").show();
+
+	});
+	/* END TIMELINE */
 });
