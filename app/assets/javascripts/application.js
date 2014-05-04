@@ -18,7 +18,7 @@
 //= require scriptcam
 
     /* JWPlayer cloud hosted with erichwelz@gmail.com account */
-<src="http://jwpsrv.com/library/KO36etOEEeO1PiIACmOLpg.js">
+
 
 $(function() {
 	console.log("page loaded");
