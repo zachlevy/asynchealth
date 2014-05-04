@@ -14,6 +14,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'scriptcam-rails'
 gem 'font-awesome-sass'
+gem 'jquery-ui-rails'
 
 group :development do
   gem 'better_errors'

@@ -16,9 +16,7 @@
 //= require_tree .
 //= require swfobject
 //= require scriptcam
-
-    /* JWPlayer cloud hosted with erichwelz@gmail.com account */
-
+//= require jquery.ui.all
 
 $(function() {
 	console.log("page loaded");
