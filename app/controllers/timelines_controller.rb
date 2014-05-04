@@ -4,4 +4,7 @@ class TimelinesController < ApplicationController
   def show 
   	@timeline = Timeline.find(params[:id])
   end
+  def create 
+  	@timeline = Timeline.new
+  end
 end
