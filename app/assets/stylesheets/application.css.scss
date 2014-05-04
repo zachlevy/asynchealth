@@ -42,7 +42,16 @@ $palette-dark: #222;
 	margin-top: 51px;
 }
 /* END BASE */
+/* START NEW VIDEO PAGE */
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
 
+/* END NEW VIDEO PAGE */
 /* START LANDING PAGE */
 .youtube-wrap,
 .video-wrap {
