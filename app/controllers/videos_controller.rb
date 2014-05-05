@@ -13,6 +13,7 @@ class VideosController < ApplicationController
       redirect_to video_path(@video)
     else
       render :new
+      format.json { render json: @video.errors, status: :unprocessable_entity }
     end
   end
 
