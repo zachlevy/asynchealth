@@ -1,4 +1,6 @@
 class CreateVideos < ActiveRecord::Migration
+  serialize :video_url
+
   def change
     create_table :videos do |t|
       t.text :video_url
