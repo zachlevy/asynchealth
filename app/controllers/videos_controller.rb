@@ -9,11 +9,11 @@ class VideosController < ApplicationController
 
   def create
     @video = Video.new(video_params)
+
     if @video.save
       redirect_to video_path(@video)
     else
       render :new
-      format.json { render json: @video.errors, status: :unprocessable_entity }
     end
   end
 
@@ -26,7 +26,7 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:question_id, :councillor_id, :video_url)
+    params.require(:video).permit(:question_id, :councillor_id, :video_url[:video_uuid])
   end
 
 end
