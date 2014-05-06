@@ -3,7 +3,7 @@ class CreateVideos < ActiveRecord::Migration
 
   def change
     create_table :videos do |t|
-      t.text :video_url
+      t.string :video_url
       t.integer :question_id
       t.integer :timeline_id
       t.timestamps

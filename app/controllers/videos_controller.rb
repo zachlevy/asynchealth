@@ -9,7 +9,8 @@ class VideosController < ApplicationController
 
   def create
     @video = Video.new(video_params)
-
+    puts "==========" + video_params[:video_url][:video_uuid]
+    # @video.video_url = video_params[:video_url][:video_uuid]
     if @video.save
       redirect_to video_path(@video)
     else
