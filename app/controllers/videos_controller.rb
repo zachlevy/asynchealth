@@ -25,7 +25,8 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:question_id, :councillor_id, :video_url)
+    params[:video_url] = params[:camera_tag][:video_uuid]
+    params.require(:video).permit(:question_id, :councillor_id, :camera_tag)
   end
 
 end

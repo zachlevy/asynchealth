@@ -1,9 +1,8 @@
 <div class="col-xs-12 page newvideo-page">
 
-<camera id='client' data-app-id='a-e311ffc0-b6a9-0131-28cf-1231390c0c78'></camera>
 
 
-<%  if false %>
+<%  if true %>
 
 	<%= form_for(@video) do |f| %>
 
@@ -37,8 +36,8 @@
 	  </div>
 
 	  <div class="field">
-	    <%= f.label :video_url %><br />
-	    <%= f.text_field :video_url %>
+	    <%= f.label :camera_tag %><br />
+	    <camera id='camera_tag' data-app-id='a-e311ffc0-b6a9-0131-28cf-1231390c0c78' data-sources='record' data-maxlength='300' style='width:400px;height:400px;' data-pre-roll-length='3' data-preview-on-recording='false'></camera>
 	  </div>
 
 	  <div class="actions">

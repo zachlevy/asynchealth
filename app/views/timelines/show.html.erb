@@ -28,6 +28,7 @@
 				</div>
 				<div class="timeline-body">
 					<div class="video-wrap">
+						<video class="video-video" id='MyPlayer1' data-uuid='[YOUR_VIDEO_UUID]'></video>
 						<video class="video-video" src="https://s3.amazonaws.com/asynchealth/demo_patient.mp4"  controls autobuffer>
 						</video>
 					</div>
@@ -56,20 +57,9 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div class="col-xs-12 well">
+		<%= @timeline.inspect %>
+	<% end %>
 
 	<% if false %>
 	<% if @timeline.videos.any? %>
