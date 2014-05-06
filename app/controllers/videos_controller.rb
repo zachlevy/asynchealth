@@ -9,8 +9,6 @@ class VideosController < ApplicationController
 
   def create
     @video = Video.new(video_params)
-    puts "==========" + @video[:video_url][:video_uuid]
-    # @video.video_url = video_params[:video_url][:video_uuid]
     if @video.save
       redirect_to video_path(@video)
     else
@@ -27,7 +25,8 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:question_id, :councillor_id, :video_url)
+    params[:video_url] = params[:camera_tag][:video_uuid]
+    params.require(:video).permit(:question_id, :councillor_id, :camera_tag)
   end
 
 end
