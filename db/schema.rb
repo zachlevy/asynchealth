@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504144650) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20140506193253) do
 
   create_table "responses", force: true do |t|
     t.integer  "video_id"
@@ -29,6 +26,13 @@ ActiveRecord::Schema.define(version: 20140504144650) do
     t.datetime "updated_at"
   end
 
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "videos", force: true do |t|
     t.string   "video_url"
     t.integer  "question_id"
@@ -37,7 +41,5 @@ ActiveRecord::Schema.define(version: 20140504144650) do
     t.datetime "updated_at"
     t.integer  "councillor_id"
   end
-
-  add_index "videos", ["timeline_id", "created_at"], name: "index_videos_on_timeline_id_and_created_at", using: :btree
 
 end

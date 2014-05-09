@@ -15,7 +15,7 @@
  *= require_self
  */
 
-
+@import "bootstrap";
 
 /* START THEME */
 $palette-primary: #9303A7;
@@ -40,6 +40,7 @@ $palette-dark: #222;
 	padding-bottom: 80px;
 	width: 100%;
 	margin-top: 51px;
+	color: #815CFF;
 }
 .brand-logo {
 	max-height: 100%;
