@@ -16,6 +16,7 @@
       <%= render 'layouts/navigation' %>
     </header>
     <div class="container main-container">
+     <title><%= yield(:page_title) %></title>
      <%= render 'layouts/messages' %>
      <%= yield %>
     </div>
@@ -28,3 +29,4 @@
     </section> </div>
   </footer>
 </html>
+
