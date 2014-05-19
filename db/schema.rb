@@ -38,6 +38,4 @@ ActiveRecord::Schema.define(version: 20140504144650) do
     t.integer  "councillor_id"
   end
 
-  add_index "videos", ["timeline_id", "created_at"], name: "index_videos_on_timeline_id_and_created_at", using: :btree
-
 end
