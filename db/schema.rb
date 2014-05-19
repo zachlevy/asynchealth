@@ -13,19 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140519200336) do
 
-  create_table "responses", force: true do |t|
-    t.integer  "video_id"
-    t.string   "response_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "timelines", force: true do |t|
-    t.integer  "timeline_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "user_name",              default: "", null: false
     t.string   "email",                  default: ""
@@ -46,10 +33,10 @@ ActiveRecord::Schema.define(version: 20140519200336) do
   create_table "videos", force: true do |t|
     t.string   "video_url"
     t.integer  "question_id"
-    t.integer  "timeline_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "councillor_id"
+    t.integer  "user_id"
   end
 
 end
