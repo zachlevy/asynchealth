@@ -15,7 +15,8 @@ gem 'simple_form'
 gem 'scriptcam-rails'
 gem 'font-awesome-sass'
 gem 'jquery-ui-rails'
-gem 'high_voltage'
+gem 'high_voltage' #routes/creates static pages
+gem 'devise' #user authentication
 
 group :development do
   gem 'better_errors'

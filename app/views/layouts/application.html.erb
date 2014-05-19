@@ -17,6 +17,9 @@
     </header>
     <div class="container main-container">
      <title><%= yield(:page_title) %></title>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
      <%= render 'layouts/messages' %>
      <%= yield %>
     </div>
