@@ -10,11 +10,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
-gem 'pg'
+gem 'sqlite3'
 gem 'simple_form'
 gem 'scriptcam-rails'
 gem 'font-awesome-sass'
 gem 'jquery-ui-rails'
+gem 'high_voltage' #routes/creates static pages
+gem 'devise' #user authentication
 
 group :development do
   gem 'better_errors'

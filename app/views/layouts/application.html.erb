@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Asynchealth" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "VideoHelp" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Asynchealth" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -16,8 +16,20 @@
       <%= render 'layouts/navigation' %>
     </header>
     <div class="container main-container">
+     <title><%= yield(:page_title) %></title>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
      <%= render 'layouts/messages' %>
      <%= yield %>
     </div>
   </body>
+  <footer class="container"> <div class="row">
+    <section class="col-sm-4"> Copyright 2014
+    </section>
+    <section class="col-sm-8">
+            All rights reserved.
+    </section> </div>
+  </footer>
 </html>
+
