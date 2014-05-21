@@ -8,9 +8,9 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+# gem 'spring',        group: :development #Causing Erich problems
 gem 'bootstrap-sass'
-gem 'sqlite3'
+gem 'pg'
 gem 'simple_form'
 gem 'scriptcam-rails'
 gem 'font-awesome-sass'
