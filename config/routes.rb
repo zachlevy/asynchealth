@@ -6,7 +6,6 @@ Asynchealth::Application.routes.draw do
 
   get 'welcome/index'
   
-  resources :timelines
   resources :videos
   resources :users
 end
