@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    raise "bang!"
+  end
+
+  def show
   end
   
   def index
