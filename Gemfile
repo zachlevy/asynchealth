@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
-gem 'sqlite3'
+gem 'pg'
 gem 'simple_form'
 gem 'scriptcam-rails'
 gem 'font-awesome-sass'
